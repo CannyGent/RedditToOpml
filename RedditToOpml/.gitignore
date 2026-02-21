@@ -417,5 +417,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-/logs/*
-/store/*
+logs/*
+store/*
