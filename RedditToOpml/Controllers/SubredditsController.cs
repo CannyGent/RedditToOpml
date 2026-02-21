@@ -31,7 +31,7 @@ public class SubredditsController(Repository repository) : ControllerBase
             repository.Subscriptions.Add(new Subscription
             {
                 Subreddit = subreddit,
-                Category = "Technology"
+                Category = "Tech"
             });
         }
 

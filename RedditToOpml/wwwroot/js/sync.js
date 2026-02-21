@@ -21,7 +21,7 @@
         redditUsername: 'alephhelix',
 
         // Your API URL (update this to match your deployment)
-        apiUrl: 'http://localhost:8080',
+        apiUrl: 'https://redditopml.cannygent.com',
 
         // Minimum time between syncs in milliseconds (30 minutes)
         syncInterval: 30 * 60 * 1000
