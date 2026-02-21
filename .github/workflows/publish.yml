@@ -2,19 +2,18 @@ name: Publish
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
-    
+
 env:
   NAME: RedditToOpml
   PACKAGE_NAME: reddittoopml
   DOCKERFILE_PATH: ./RedditToOpml/Dockerfile
   STACK_PATH: /opt/stacks/reddittoopml
-  
+
 jobs:
   publish:
     runs-on: ubuntu-latest
-    #runs-on: self-hosted
     permissions:
       contents: read
       packages: write
@@ -25,7 +24,7 @@ jobs:
         with:
           registry: ghcr.io
           username: CannyGent
-          password: ${{ secrets.REGISTRY_TOKEN }}
+          password: ${{secrets.REGISTRY_TOKEN}}
       - uses: docker/build-push-action@v5
         with:
           push: true
@@ -33,7 +32,7 @@ jobs:
           platforms: linux/amd64
           file: ${{ env.DOCKERFILE_PATH }}
 
-deploy:
+  deploy:
     needs: publish
     runs-on: ubuntu-latest
     outputs:
