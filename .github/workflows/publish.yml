@@ -1,0 +1,133 @@
+name: Publish
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+    
+env:
+  NAME: RedditToOpml
+  PACKAGE_NAME: reddittoopml
+  DOCKERFILE_PATH: ./RedditToOpml/Dockerfile
+  STACK_PATH: /opt/stacks/reddittoopml
+  
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    #runs-on: self-hosted
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: CannyGent
+          password: ${{ secrets.REGISTRY_TOKEN }}
+      - uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: ghcr.io/cannygent/${{ env.PACKAGE_NAME }}:latest
+          platforms: linux/amd64
+          file: ${{ env.DOCKERFILE_PATH }}
+
+  # This deploy needs to jump via aonachmor because carnaosda is on kill switch
+#  deploy:
+#    needs: publish
+#    #runs-on: ubuntu-latest
+#    runs-on: self-hosted
+#    outputs:
+#      deploy_output: ${{ steps.capture.outputs.deploy_output }}
+#    steps:
+#      - name: SSH and Pull / Up
+#        uses: appleboy/ssh-action@v1
+#        with:
+#          proxy_host: ${{ secrets.SSH_HOST }}
+#          proxy_username: ${{ secrets.SSH_USER }}
+#          proxy_key: ${{ secrets.SSH_KEY }}
+#          proxy_port: ${{ secrets.SSH_PORT }}
+#          host: 10.0.0.46
+#          username: ${{ secrets.SSH_HOST }}
+#          key: ${{ secrets.SSH_KEY }}
+#          port: 22
+#          script: |
+#            cd ${{ env.STACK_PATH }}
+#            sudo docker compose pull
+#            sudo docker compose up -d
+#            sleep 10
+#
+#      - name: Grab Log
+#        run: |
+#          mkdir -p ~/.ssh
+#          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/temp_key
+#          chmod 600 ~/.ssh/temp_key
+#          scp -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -i ~/.ssh/temp_key -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -W %h:%p" -i ~/.ssh/temp_key ${{ secrets.SSH_USER }}@10.0.0.46:${{ env.STACK_PATH }}/logs/server.log ./
+#          rm ~/.ssh/temp_key
+#
+#      - name: Capture deploy output
+#        id: capture
+#        run: |
+#          echo "deploy_output<<EOF" >> $GITHUB_OUTPUT
+#          cat server.log >> $GITHUB_OUTPUT
+#          echo "EOF" >> $GITHUB_OUTPUT
+            
+  deploy:
+    needs: publish
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
+    outputs:
+      deploy_output: ${{ steps.capture.outputs.deploy_output }}
+    steps:
+      - name: Pull / Up
+        run: |
+          cd ${{ env.STACK_PATH }}
+          sudo docker compose pull
+          sudo docker compose up -d
+          sleep 10
+
+      - name: Grab Log
+        run: |
+          cd ${{ env.STACK_PATH }}
+          cd logs
+          echo "deploy_output<<EOF" >> $GITHUB_OUTPUT
+          cat server.log >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT       
+          
+  notify:
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
+    needs: [deploy,publish]
+    if: always()
+    steps:
+      - name: Email on Success
+        if: needs.deploy.result == 'success' && needs.publish.result == 'success'
+        uses: dawidd6/action-send-mail@v6
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: system@thethomsonsweb.com
+          password: ${{ secrets.GMAIL_PASSWORD }}
+          from: system@thethomsonsweb.com
+          subject: ${{ env.NAME }} Deployment Successful
+          body: |
+            The application has been successfully built and deployed.
+            
+            Deployment Output:
+            ${{ needs.deploy.outputs.deploy_output }}
+          to: alasdair@thethomsonsweb.com
+      - name: Email on Failure
+        if: failure()
+        uses: dawidd6/action-send-mail@v6
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: system@thethomsonsweb.com
+          password: ${{ secrets.GMAIL_PASSWORD }}
+          from: system@thethomsonsweb.com
+          subject: ${{ env.NAME }} Deployment Failed
+          body: The GitHub Actions pipeline failed. Check the logs for details.
+          to: alasdair@thethomsonsweb.com

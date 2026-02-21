@@ -1,6 +1,6 @@
 ﻿// ==UserScript==
 // @name         Reddit to OPML Sync
-// @namespace    http://your-api.example.com
+// @namespace    https://redditopml.cannygent.com
 // @version      1.0
 // @description  Syncs Reddit subscribed subreddits to an OPML API for RSS readers
 // @author       You
@@ -8,6 +8,7 @@
 // @grant        GM_xmlhttpRequest
 // @grant        GM_notification
 // @connect      localhost
+// @connect      redditopml.cannygent.com
 // @run-at       document-idle
 // ==/UserScript==
 
