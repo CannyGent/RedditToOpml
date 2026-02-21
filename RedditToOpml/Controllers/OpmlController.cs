@@ -40,7 +40,7 @@ public class OpmlController(Repository repository) : ControllerBase
             foreach (var subscription in categoryGroup.OrderBy(s => s.Subreddit))
             {
                 var subredditEscaped = XmlEncode(subscription.Subreddit);
-                var rssUrl = $"https://www.reddit.com/{subscription.Subreddit}/top.rss?t=week&limit=50";
+                var rssUrl = XmlEncode($"https://www.reddit.com/{subscription.Subreddit}/top.rss?t=week&limit=50");
                 sb.AppendLine($"      <outline type=\"rss\" text=\"Reddit {subredditEscaped}\" title=\"Reddit {subredditEscaped}\" xmlUrl=\"{rssUrl}\"/>");
             }
 
