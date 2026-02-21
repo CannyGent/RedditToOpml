@@ -12,7 +12,7 @@ public class Program
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
             .WriteTo.Console()
-            .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+            .WriteTo.File("logs/server.log", rollingInterval: RollingInterval.Day)
             .CreateLogger();
 
         try
