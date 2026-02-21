@@ -33,71 +33,42 @@ jobs:
           platforms: linux/amd64
           file: ${{ env.DOCKERFILE_PATH }}
 
-  # This deploy needs to jump via aonachmor because carnaosda is on kill switch
-#  deploy:
-#    needs: publish
-#    #runs-on: ubuntu-latest
-#    runs-on: self-hosted
-#    outputs:
-#      deploy_output: ${{ steps.capture.outputs.deploy_output }}
-#    steps:
-#      - name: SSH and Pull / Up
-#        uses: appleboy/ssh-action@v1
-#        with:
-#          proxy_host: ${{ secrets.SSH_HOST }}
-#          proxy_username: ${{ secrets.SSH_USER }}
-#          proxy_key: ${{ secrets.SSH_KEY }}
-#          proxy_port: ${{ secrets.SSH_PORT }}
-#          host: 10.0.0.46
-#          username: ${{ secrets.SSH_HOST }}
-#          key: ${{ secrets.SSH_KEY }}
-#          port: 22
-#          script: |
-#            cd ${{ env.STACK_PATH }}
-#            sudo docker compose pull
-#            sudo docker compose up -d
-#            sleep 10
-#
-#      - name: Grab Log
-#        run: |
-#          mkdir -p ~/.ssh
-#          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/temp_key
-#          chmod 600 ~/.ssh/temp_key
-#          scp -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -i ~/.ssh/temp_key -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -W %h:%p" -i ~/.ssh/temp_key ${{ secrets.SSH_USER }}@10.0.0.46:${{ env.STACK_PATH }}/logs/server.log ./
-#          rm ~/.ssh/temp_key
-#
-#      - name: Capture deploy output
-#        id: capture
-#        run: |
-#          echo "deploy_output<<EOF" >> $GITHUB_OUTPUT
-#          cat server.log >> $GITHUB_OUTPUT
-#          echo "EOF" >> $GITHUB_OUTPUT
-            
-  deploy:
+deploy:
     needs: publish
-    #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     outputs:
       deploy_output: ${{ steps.capture.outputs.deploy_output }}
     steps:
-      - name: Pull / Up
-        run: |
-          cd ${{ env.STACK_PATH }}
-          sudo docker compose pull
-          sudo docker compose up -d
-          sleep 10
+      - name: SSH and Pull / Up
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd ${{ env.STACK_PATH }}
+            sudo docker compose pull
+            sudo docker compose up -d
+            sleep 10
 
       - name: Grab Log
         run: |
-          cd ${{ env.STACK_PATH }}
-          cd logs
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/temp_key
+          chmod 600 ~/.ssh/temp_key
+          scp -i ~/.ssh/temp_key -P ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ env.STACK_PATH }}/logs/server.log ./
+          rm ~/.ssh/temp_key
+
+      - name: Capture deploy output
+        id: capture
+        run: |
           echo "deploy_output<<EOF" >> $GITHUB_OUTPUT
           cat server.log >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT       
+          echo "EOF" >> $GITHUB_OUTPUT
           
   notify:
-    #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: [deploy,publish]
     if: always()
     steps:
