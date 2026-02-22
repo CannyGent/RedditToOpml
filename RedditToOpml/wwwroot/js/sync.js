@@ -23,8 +23,8 @@
         // Your API URL (update this to match your deployment)
         apiUrl: 'https://redditopml.cannygent.com',
 
-        // Minimum time between syncs in milliseconds (30 minutes)
-        syncInterval: 30 * 60 * 1000
+        // Minimum time between syncs in milliseconds
+        syncInterval: 1 * 60 * 1000
     };
 
     // Storage key for last sync time
