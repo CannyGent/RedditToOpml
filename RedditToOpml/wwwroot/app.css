@@ -337,6 +337,11 @@ h1:focus {
     padding: 0.5rem 1rem;
 }
 
+.category-selector .form-select option {
+    background: #1a1a2e;
+    color: #fff;
+}
+
 .category-selector .form-select:focus {
     border-color: #ff4500;
     box-shadow: 0 0 0 0.1rem rgba(255, 69, 0, 0.25);
