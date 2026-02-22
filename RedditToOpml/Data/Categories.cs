@@ -4,9 +4,11 @@ public static class Categories
 {
     public static readonly IReadOnlyList<string> All = new List<string>
     {
-        "Glasgow",
+        "Scotland",
         "Misc",
         "Money",
-        "Tech"
+        "Tech",
+        "Dev",
+        "Cyber"
     }.AsReadOnly();
 }
