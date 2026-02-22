@@ -1,0 +1,754 @@
+- generic [ref=e496]:
+  - generic [ref=e498]:
+    - generic [ref=e500]: 
+    - heading "Reddit RSS Subscriptions" [active] [level=1] [ref=e501]
+    - paragraph [ref=e502]: Manage your subreddit subscriptions and organize them into categories for your RSS feed reader
+  - generic [ref=e503]:
+    - generic [ref=e504]:
+      - generic [ref=e505]: 
+      - generic [ref=e506]: "29"
+      - generic [ref=e507]: Subscriptions
+    - generic [ref=e508]:
+      - generic [ref=e509]: 
+      - generic [ref=e510]: "4"
+      - generic [ref=e511]: Categories
+    - generic [ref=e512]:
+      - generic [ref=e513]: 
+      - link " Download OPML" [ref=e514] [cursor=pointer]:
+        - /url: /opml
+        - generic [ref=e515]: 
+        - text: Download OPML
+  - generic [ref=e516]:
+    - generic [ref=e517]:
+      - heading " Your Subscriptions" [level=2] [ref=e518]:
+        - generic [ref=e519]: 
+        - text: Your Subscriptions
+      - generic [ref=e520]:
+        - generic [ref=e521]: 
+        - textbox "Search subscriptions..." [ref=e522]
+    - generic [ref=e523]:
+      - generic [ref=e524]:
+        - generic [ref=e525]:
+          - generic [ref=e527]: 
+          - generic [ref=e528]:
+            - heading "r/AgentsOfAI" [level=3] [ref=e529]
+            - generic [ref=e530]: r/r/AgentsOfAI
+        - generic [ref=e531]:
+          - generic [ref=e532]:
+            - generic [ref=e533]:
+              - generic [ref=e534]: 
+              - text: Category
+            - combobox [ref=e535]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e536]:
+            - link " View" [ref=e537] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AgentsOfAI
+              - generic [ref=e538]: 
+              - text: View
+            - link " RSS" [ref=e539] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AgentsOfAI/.rss
+              - generic [ref=e540]: 
+              - text: RSS
+      - generic [ref=e541]:
+        - generic [ref=e542]:
+          - generic [ref=e544]: 
+          - generic [ref=e545]:
+            - heading "r/AI_Agents" [level=3] [ref=e546]
+            - generic [ref=e547]: r/r/AI_Agents
+        - generic [ref=e548]:
+          - generic [ref=e549]:
+            - generic [ref=e550]:
+              - generic [ref=e551]: 
+              - text: Category
+            - combobox [ref=e552]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e553]:
+            - link " View" [ref=e554] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AI_Agents
+              - generic [ref=e555]: 
+              - text: View
+            - link " RSS" [ref=e556] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AI_Agents/.rss
+              - generic [ref=e557]: 
+              - text: RSS
+      - generic [ref=e558]:
+        - generic [ref=e559]:
+          - generic [ref=e561]: 
+          - generic [ref=e562]:
+            - heading "r/AiBuilders" [level=3] [ref=e563]
+            - generic [ref=e564]: r/r/AiBuilders
+        - generic [ref=e565]:
+          - generic [ref=e566]:
+            - generic [ref=e567]:
+              - generic [ref=e568]: 
+              - text: Category
+            - combobox [ref=e569]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e570]:
+            - link " View" [ref=e571] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AiBuilders
+              - generic [ref=e572]: 
+              - text: View
+            - link " RSS" [ref=e573] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AiBuilders/.rss
+              - generic [ref=e574]: 
+              - text: RSS
+      - generic [ref=e575]:
+        - generic [ref=e576]:
+          - generic [ref=e578]: 
+          - generic [ref=e579]:
+            - heading "r/AskVibecoders" [level=3] [ref=e580]
+            - generic [ref=e581]: r/r/AskVibecoders
+        - generic [ref=e582]:
+          - generic [ref=e583]:
+            - generic [ref=e584]:
+              - generic [ref=e585]: 
+              - text: Category
+            - combobox [ref=e586]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e587]:
+            - link " View" [ref=e588] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AskVibecoders
+              - generic [ref=e589]: 
+              - text: View
+            - link " RSS" [ref=e590] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/AskVibecoders/.rss
+              - generic [ref=e591]: 
+              - text: RSS
+      - generic [ref=e592]:
+        - generic [ref=e593]:
+          - generic [ref=e595]: 
+          - generic [ref=e596]:
+            - heading "r/automation" [level=3] [ref=e597]
+            - generic [ref=e598]: r/r/automation
+        - generic [ref=e599]:
+          - generic [ref=e600]:
+            - generic [ref=e601]:
+              - generic [ref=e602]: 
+              - text: Category
+            - combobox [ref=e603]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e604]:
+            - link " View" [ref=e605] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/automation
+              - generic [ref=e606]: 
+              - text: View
+            - link " RSS" [ref=e607] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/automation/.rss
+              - generic [ref=e608]: 
+              - text: RSS
+      - generic [ref=e609]:
+        - generic [ref=e610]:
+          - generic [ref=e612]: 
+          - generic [ref=e613]:
+            - heading "r/BambuLab" [level=3] [ref=e614]
+            - generic [ref=e615]: r/r/BambuLab
+        - generic [ref=e616]:
+          - generic [ref=e617]:
+            - generic [ref=e618]:
+              - generic [ref=e619]: 
+              - text: Category
+            - combobox [ref=e620]:
+              - option "Glasgow"
+              - option "Misc" [selected]
+              - option "Money"
+              - option "Tech"
+          - generic [ref=e621]:
+            - link " View" [ref=e622] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/BambuLab
+              - generic [ref=e623]: 
+              - text: View
+            - link " RSS" [ref=e624] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/BambuLab/.rss
+              - generic [ref=e625]: 
+              - text: RSS
+      - generic [ref=e626]:
+        - generic [ref=e627]:
+          - generic [ref=e629]: 
+          - generic [ref=e630]:
+            - heading "r/buildinpublic" [level=3] [ref=e631]
+            - generic [ref=e632]: r/r/buildinpublic
+        - generic [ref=e633]:
+          - generic [ref=e634]:
+            - generic [ref=e635]:
+              - generic [ref=e636]: 
+              - text: Category
+            - combobox [ref=e637]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e638]:
+            - link " View" [ref=e639] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/buildinpublic
+              - generic [ref=e640]: 
+              - text: View
+            - link " RSS" [ref=e641] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/buildinpublic/.rss
+              - generic [ref=e642]: 
+              - text: RSS
+      - generic [ref=e643]:
+        - generic [ref=e644]:
+          - generic [ref=e646]: 
+          - generic [ref=e647]:
+            - heading "r/ChatGPTCoding" [level=3] [ref=e648]
+            - generic [ref=e649]: r/r/ChatGPTCoding
+        - generic [ref=e650]:
+          - generic [ref=e651]:
+            - generic [ref=e652]:
+              - generic [ref=e653]: 
+              - text: Category
+            - combobox [ref=e654]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e655]:
+            - link " View" [ref=e656] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ChatGPTCoding
+              - generic [ref=e657]: 
+              - text: View
+            - link " RSS" [ref=e658] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ChatGPTCoding/.rss
+              - generic [ref=e659]: 
+              - text: RSS
+      - generic [ref=e660]:
+        - generic [ref=e661]:
+          - generic [ref=e663]: 
+          - generic [ref=e664]:
+            - heading "r/ClaudeCode" [level=3] [ref=e665]
+            - generic [ref=e666]: r/r/ClaudeCode
+        - generic [ref=e667]:
+          - generic [ref=e668]:
+            - generic [ref=e669]:
+              - generic [ref=e670]: 
+              - text: Category
+            - combobox [ref=e671]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e672]:
+            - link " View" [ref=e673] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ClaudeCode
+              - generic [ref=e674]: 
+              - text: View
+            - link " RSS" [ref=e675] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ClaudeCode/.rss
+              - generic [ref=e676]: 
+              - text: RSS
+      - generic [ref=e677]:
+        - generic [ref=e678]:
+          - generic [ref=e680]: 
+          - generic [ref=e681]:
+            - heading "r/DataHoarder" [level=3] [ref=e682]
+            - generic [ref=e683]: r/r/DataHoarder
+        - generic [ref=e684]:
+          - generic [ref=e685]:
+            - generic [ref=e686]:
+              - generic [ref=e687]: 
+              - text: Category
+            - combobox [ref=e688]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e689]:
+            - link " View" [ref=e690] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/DataHoarder
+              - generic [ref=e691]: 
+              - text: View
+            - link " RSS" [ref=e692] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/DataHoarder/.rss
+              - generic [ref=e693]: 
+              - text: RSS
+      - generic [ref=e694]:
+        - generic [ref=e695]:
+          - generic [ref=e697]: 
+          - generic [ref=e698]:
+            - heading "r/ex30" [level=3] [ref=e699]
+            - generic [ref=e700]: r/r/ex30
+        - generic [ref=e701]:
+          - generic [ref=e702]:
+            - generic [ref=e703]:
+              - generic [ref=e704]: 
+              - text: Category
+            - combobox [ref=e705]:
+              - option "Glasgow"
+              - option "Misc" [selected]
+              - option "Money"
+              - option "Tech"
+          - generic [ref=e706]:
+            - link " View" [ref=e707] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ex30
+              - generic [ref=e708]: 
+              - text: View
+            - link " RSS" [ref=e709] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ex30/.rss
+              - generic [ref=e710]: 
+              - text: RSS
+      - generic [ref=e711]:
+        - generic [ref=e712]:
+          - generic [ref=e714]: 
+          - generic [ref=e715]:
+            - heading "r/frigate_nvr" [level=3] [ref=e716]
+            - generic [ref=e717]: r/r/frigate_nvr
+        - generic [ref=e718]:
+          - generic [ref=e719]:
+            - generic [ref=e720]:
+              - generic [ref=e721]: 
+              - text: Category
+            - combobox [ref=e722]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e723]:
+            - link " View" [ref=e724] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/frigate_nvr
+              - generic [ref=e725]: 
+              - text: View
+            - link " RSS" [ref=e726] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/frigate_nvr/.rss
+              - generic [ref=e727]: 
+              - text: RSS
+      - generic [ref=e728]:
+        - generic [ref=e729]:
+          - generic [ref=e731]: 
+          - generic [ref=e732]:
+            - heading "r/glasgow" [level=3] [ref=e733]
+            - generic [ref=e734]: r/r/glasgow
+        - generic [ref=e735]:
+          - generic [ref=e736]:
+            - generic [ref=e737]:
+              - generic [ref=e738]: 
+              - text: Category
+            - combobox [ref=e739]:
+              - option "Glasgow" [selected]
+              - option "Misc"
+              - option "Money"
+              - option "Tech"
+          - generic [ref=e740]:
+            - link " View" [ref=e741] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/glasgow
+              - generic [ref=e742]: 
+              - text: View
+            - link " RSS" [ref=e743] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/glasgow/.rss
+              - generic [ref=e744]: 
+              - text: RSS
+      - generic [ref=e745]:
+        - generic [ref=e746]:
+          - generic [ref=e748]: 
+          - generic [ref=e749]:
+            - heading "r/homeassistant" [level=3] [ref=e750]
+            - generic [ref=e751]: r/r/homeassistant
+        - generic [ref=e752]:
+          - generic [ref=e753]:
+            - generic [ref=e754]:
+              - generic [ref=e755]: 
+              - text: Category
+            - combobox [ref=e756]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e757]:
+            - link " View" [ref=e758] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/homeassistant
+              - generic [ref=e759]: 
+              - text: View
+            - link " RSS" [ref=e760] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/homeassistant/.rss
+              - generic [ref=e761]: 
+              - text: RSS
+      - generic [ref=e762]:
+        - generic [ref=e763]:
+          - generic [ref=e765]: 
+          - generic [ref=e766]:
+            - heading "r/homelab" [level=3] [ref=e767]
+            - generic [ref=e768]: r/r/homelab
+        - generic [ref=e769]:
+          - generic [ref=e770]:
+            - generic [ref=e771]:
+              - generic [ref=e772]: 
+              - text: Category
+            - combobox [ref=e773]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e774]:
+            - link " View" [ref=e775] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/homelab
+              - generic [ref=e776]: 
+              - text: View
+            - link " RSS" [ref=e777] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/homelab/.rss
+              - generic [ref=e778]: 
+              - text: RSS
+      - generic [ref=e779]:
+        - generic [ref=e780]:
+          - generic [ref=e782]: 
+          - generic [ref=e783]:
+            - heading "r/indiehackers" [level=3] [ref=e784]
+            - generic [ref=e785]: r/r/indiehackers
+        - generic [ref=e786]:
+          - generic [ref=e787]:
+            - generic [ref=e788]:
+              - generic [ref=e789]: 
+              - text: Category
+            - combobox [ref=e790]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e791]:
+            - link " View" [ref=e792] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/indiehackers
+              - generic [ref=e793]: 
+              - text: View
+            - link " RSS" [ref=e794] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/indiehackers/.rss
+              - generic [ref=e795]: 
+              - text: RSS
+      - generic [ref=e796]:
+        - generic [ref=e797]:
+          - generic [ref=e799]: 
+          - generic [ref=e800]:
+            - heading "r/lovable" [level=3] [ref=e801]
+            - generic [ref=e802]: r/r/lovable
+        - generic [ref=e803]:
+          - generic [ref=e804]:
+            - generic [ref=e805]:
+              - generic [ref=e806]: 
+              - text: Category
+            - combobox [ref=e807]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e808]:
+            - link " View" [ref=e809] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/lovable
+              - generic [ref=e810]: 
+              - text: View
+            - link " RSS" [ref=e811] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/lovable/.rss
+              - generic [ref=e812]: 
+              - text: RSS
+      - generic [ref=e813]:
+        - generic [ref=e814]:
+          - generic [ref=e816]: 
+          - generic [ref=e817]:
+            - heading "r/PS5_Jailbreak" [level=3] [ref=e818]
+            - generic [ref=e819]: r/r/PS5_Jailbreak
+        - generic [ref=e820]:
+          - generic [ref=e821]:
+            - generic [ref=e822]:
+              - generic [ref=e823]: 
+              - text: Category
+            - combobox [ref=e824]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e825]:
+            - link " View" [ref=e826] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/PS5_Jailbreak
+              - generic [ref=e827]: 
+              - text: View
+            - link " RSS" [ref=e828] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/PS5_Jailbreak/.rss
+              - generic [ref=e829]: 
+              - text: RSS
+      - generic [ref=e830]:
+        - generic [ref=e831]:
+          - generic [ref=e833]: 
+          - generic [ref=e834]:
+            - heading "r/roastmystartup" [level=3] [ref=e835]
+            - generic [ref=e836]: r/r/roastmystartup
+        - generic [ref=e837]:
+          - generic [ref=e838]:
+            - generic [ref=e839]:
+              - generic [ref=e840]: 
+              - text: Category
+            - combobox [ref=e841]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e842]:
+            - link " View" [ref=e843] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/roastmystartup
+              - generic [ref=e844]: 
+              - text: View
+            - link " RSS" [ref=e845] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/roastmystartup/.rss
+              - generic [ref=e846]: 
+              - text: RSS
+      - generic [ref=e847]:
+        - generic [ref=e848]:
+          - generic [ref=e850]: 
+          - generic [ref=e851]:
+            - heading "r/SaasDevelopers" [level=3] [ref=e852]
+            - generic [ref=e853]: r/r/SaasDevelopers
+        - generic [ref=e854]:
+          - generic [ref=e855]:
+            - generic [ref=e856]:
+              - generic [ref=e857]: 
+              - text: Category
+            - combobox [ref=e858]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e859]:
+            - link " View" [ref=e860] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/SaasDevelopers
+              - generic [ref=e861]: 
+              - text: View
+            - link " RSS" [ref=e862] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/SaasDevelopers/.rss
+              - generic [ref=e863]: 
+              - text: RSS
+      - generic [ref=e864]:
+        - generic [ref=e865]:
+          - generic [ref=e867]: 
+          - generic [ref=e868]:
+            - heading "r/Scotland" [level=3] [ref=e869]
+            - generic [ref=e870]: r/r/Scotland
+        - generic [ref=e871]:
+          - generic [ref=e872]:
+            - generic [ref=e873]:
+              - generic [ref=e874]: 
+              - text: Category
+            - combobox [ref=e875]:
+              - option "Glasgow" [selected]
+              - option "Misc"
+              - option "Money"
+              - option "Tech"
+          - generic [ref=e876]:
+            - link " View" [ref=e877] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/Scotland
+              - generic [ref=e878]: 
+              - text: View
+            - link " RSS" [ref=e879] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/Scotland/.rss
+              - generic [ref=e880]: 
+              - text: RSS
+      - generic [ref=e881]:
+        - generic [ref=e882]:
+          - generic [ref=e884]: 
+          - generic [ref=e885]:
+            - heading "r/selfhosted" [level=3] [ref=e886]
+            - generic [ref=e887]: r/r/selfhosted
+        - generic [ref=e888]:
+          - generic [ref=e889]:
+            - generic [ref=e890]:
+              - generic [ref=e891]: 
+              - text: Category
+            - combobox [ref=e892]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e893]:
+            - link " View" [ref=e894] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/selfhosted
+              - generic [ref=e895]: 
+              - text: View
+            - link " RSS" [ref=e896] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/selfhosted/.rss
+              - generic [ref=e897]: 
+              - text: RSS
+      - generic [ref=e898]:
+        - generic [ref=e899]:
+          - generic [ref=e901]: 
+          - generic [ref=e902]:
+            - heading "r/ShowMeYourSaaS" [level=3] [ref=e903]
+            - generic [ref=e904]: r/r/ShowMeYourSaaS
+        - generic [ref=e905]:
+          - generic [ref=e906]:
+            - generic [ref=e907]:
+              - generic [ref=e908]: 
+              - text: Category
+            - combobox [ref=e909]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e910]:
+            - link " View" [ref=e911] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ShowMeYourSaaS
+              - generic [ref=e912]: 
+              - text: View
+            - link " RSS" [ref=e913] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ShowMeYourSaaS/.rss
+              - generic [ref=e914]: 
+              - text: RSS
+      - generic [ref=e915]:
+        - generic [ref=e916]:
+          - generic [ref=e918]: 
+          - generic [ref=e919]:
+            - heading "r/SideProject" [level=3] [ref=e920]
+            - generic [ref=e921]: r/r/SideProject
+        - generic [ref=e922]:
+          - generic [ref=e923]:
+            - generic [ref=e924]:
+              - generic [ref=e925]: 
+              - text: Category
+            - combobox [ref=e926]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e927]:
+            - link " View" [ref=e928] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/SideProject
+              - generic [ref=e929]: 
+              - text: View
+            - link " RSS" [ref=e930] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/SideProject/.rss
+              - generic [ref=e931]: 
+              - text: RSS
+      - generic [ref=e932]:
+        - generic [ref=e933]:
+          - generic [ref=e935]: 
+          - generic [ref=e936]:
+            - heading "r/UKPersonalFinance" [level=3] [ref=e937]
+            - generic [ref=e938]: r/r/UKPersonalFinance
+        - generic [ref=e939]:
+          - generic [ref=e940]:
+            - generic [ref=e941]:
+              - generic [ref=e942]: 
+              - text: Category
+            - combobox [ref=e943]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money" [selected]
+              - option "Tech"
+          - generic [ref=e944]:
+            - link " View" [ref=e945] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/UKPersonalFinance
+              - generic [ref=e946]: 
+              - text: View
+            - link " RSS" [ref=e947] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/UKPersonalFinance/.rss
+              - generic [ref=e948]: 
+              - text: RSS
+      - generic [ref=e949]:
+        - generic [ref=e950]:
+          - generic [ref=e952]: 
+          - generic [ref=e953]:
+            - heading "r/unpopularopinion" [level=3] [ref=e954]
+            - generic [ref=e955]: r/r/unpopularopinion
+        - generic [ref=e956]:
+          - generic [ref=e957]:
+            - generic [ref=e958]:
+              - generic [ref=e959]: 
+              - text: Category
+            - combobox [ref=e960]:
+              - option "Glasgow"
+              - option "Misc" [selected]
+              - option "Money"
+              - option "Tech"
+          - generic [ref=e961]:
+            - link " View" [ref=e962] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/unpopularopinion
+              - generic [ref=e963]: 
+              - text: View
+            - link " RSS" [ref=e964] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/unpopularopinion/.rss
+              - generic [ref=e965]: 
+              - text: RSS
+      - generic [ref=e966]:
+        - generic [ref=e967]:
+          - generic [ref=e969]: 
+          - generic [ref=e970]:
+            - heading "r/vibecoding" [level=3] [ref=e971]
+            - generic [ref=e972]: r/r/vibecoding
+        - generic [ref=e973]:
+          - generic [ref=e974]:
+            - generic [ref=e975]:
+              - generic [ref=e976]: 
+              - text: Category
+            - combobox [ref=e977]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e978]:
+            - link " View" [ref=e979] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/vibecoding
+              - generic [ref=e980]: 
+              - text: View
+            - link " RSS" [ref=e981] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/vibecoding/.rss
+              - generic [ref=e982]: 
+              - text: RSS
+      - generic [ref=e983]:
+        - generic [ref=e984]:
+          - generic [ref=e986]: 
+          - generic [ref=e987]:
+            - heading "r/webscraping" [level=3] [ref=e988]
+            - generic [ref=e989]: r/r/webscraping
+        - generic [ref=e990]:
+          - generic [ref=e991]:
+            - generic [ref=e992]:
+              - generic [ref=e993]: 
+              - text: Category
+            - combobox [ref=e994]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e995]:
+            - link " View" [ref=e996] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/webscraping
+              - generic [ref=e997]: 
+              - text: View
+            - link " RSS" [ref=e998] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/webscraping/.rss
+              - generic [ref=e999]: 
+              - text: RSS
+      - generic [ref=e1000]:
+        - generic [ref=e1001]:
+          - generic [ref=e1003]: 
+          - generic [ref=e1004]:
+            - heading "r/ZaiGLM" [level=3] [ref=e1005]
+            - generic [ref=e1006]: r/r/ZaiGLM
+        - generic [ref=e1007]:
+          - generic [ref=e1008]:
+            - generic [ref=e1009]:
+              - generic [ref=e1010]: 
+              - text: Category
+            - combobox [ref=e1011]:
+              - option "Glasgow"
+              - option "Misc"
+              - option "Money"
+              - option "Tech" [selected]
+          - generic [ref=e1012]:
+            - link " View" [ref=e1013] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ZaiGLM
+              - generic [ref=e1014]: 
+              - text: View
+            - link " RSS" [ref=e1015] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/r/ZaiGLM/.rss
+              - generic [ref=e1016]: 
+              - text: RSS

@@ -16,6 +16,16 @@ public class OpmlController(Repository repository) : ControllerBase
         var opmlXml = GenerateOpmlXml(subscriptions);
         return Content(opmlXml, "application/xml", Encoding.UTF8);
     }
+    
+    [HttpGet]
+    [Produces("application/xml")]
+    [Route("/api/opml/{category}")]
+    public IActionResult GetOpml([FromRoute]string category)
+    {
+        var subscriptions = repository.Subscriptions.Where(x=>x.Category.Equals(category, StringComparison.InvariantCultureIgnoreCase));
+        var opmlXml = GenerateOpmlXml(subscriptions);
+        return Content(opmlXml, "application/xml", Encoding.UTF8);
+    }
 
     private static string GenerateOpmlXml(IEnumerable<Subscription> subscriptions)
     {
